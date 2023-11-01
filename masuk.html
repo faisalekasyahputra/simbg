@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMBG</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/ico/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/ico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/ico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/ico/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/ico/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="assets/ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/ico/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/ico/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="assets/ico/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="assets/ico/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="assets/ico/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="assets/ico/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="assets/ico/mstile-310x310.png" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+
+    <!-- Add Bootstrap CSS from a CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Optional custom CSS -->
+    <script src="https://kit.fontawesome.com/40248f80b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top glass">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="logo-pupr" width="150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav align-items-center d-flex ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="beranda" href="index.html">Beranda</a>
+                    </li>
+                    <li class=" dropdown d-flex">
+                        <a class="btn nav-link d-flex align-items-center " href="#" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <p class="m-0">Bangunan Pemerintah</p> <i class="fa fa-sort-down ms-2 mb-2"
+                                aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu mt-4" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" href="bgmd.html" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">Berdasarkan OPD</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Berdasarkan Bangunan</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" id="cuy-tab" data-bs-toggle="tab"
+                                data-bs-target="#cuy-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Berdasarkan Fungsi</a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </li>
+                    <li class=" dropdown d-flex">
+                        <a class="btn nav-link d-flex align-items-center " href="#" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <p class="m-0">Bangunan Non Pemerintah</p> <i class="fa fa-sort-down ms-2 mb-2"
+                                aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu mt-4" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" href="bgmd.html" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">Berdasarkan Bangunan</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Berdasarkan Fungsi</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spasial.html">Peta Spasial</a>
+                    </li>
+                 
+                    <li class=" dropdown d-flex">
+                        <a class="btn nav-link d-flex align-items-center " href="#" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <p class="m-0">Statistika</p> <i class="fa fa-sort-down ms-2 mb-2"
+                                aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu mt-4" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" href="bgmd.html" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">Total</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Pemerintah</a>
+                            </li>
+                           <li class="nav-item" role="presentation">
+                                <a class="dropdown-item nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Non-Pemerintah</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section id="section-1" class="hero-section bintang">
+        <div class="container-fluid pt-5">
+            <div class="container h-100 pt-5 d-flex align-items-top justify-content-center" style="min-height: 100vh; ">
+                <div class="row justify-content-center">
+                    <div class="col d-flex flex-column align-items-center ">
+                        <h1 class="display-6 text-end fw-bolder judul">
+                            <i class="fa fa-building p-1 me-2"aria-hidden="true"></i> Sistem Informasi Manajemen
+                            Bina Penataan Bangunan</h1>
+                        <h1 class="h5 fw-bold mb-5">Dinas PUPR Pemerintah Kota Semarang.</h1>
+                        <div class="row ">
+                            <div class="col">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item glass-nocolor " role="presentation">
+                                        <button class="nav-link nav-link-tab active text-dark" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane" type="button" role="tab"
+                                            aria-controls="home-tab-pane" aria-selected="true">Masuk Bantuan
+                                            Teknis</button>
+                                    </li>
+                                    <li class="nav-item glass-nocolor" role="presentation">
+                                        <button class="nav-link nav-link-tab  text-dark" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                            aria-controls="profile-tab-pane" aria-selected="false">Modul Bantuan
+                                            Teknis</button>
+                                    </li>
+                                    <li class="nav-item glass-nocolor" role="presentation">
+                                        <button class="nav-link nav-link-tab text-dark" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                            aria-controls="contact-tab-pane" aria-selected="false">Bantuan
+                                            Admin</button>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="tab-content rounded-3 w-100 glass-nocolor p-3 bg-transparent border border-top-0" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <img src="" alt="">
+                                <form>
+                                    <img class="img-thumbnail mb-4 border-0 rounded-3"  src="assets/img/logo_pupr.png" alt="" width="72"
+                                        height="57">
+                                    <p class="mb-3 fw-normal">Harap Masuk Untuk Bantuan Teknis</p>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+
+                                    <div class="form-check text-start my-3">
+                                        <input class="form-check-input" type="checkbox" value="remember-me"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-primary w-100 py-2" type="submit">Masuk</button>
+                                    <a class="nav-link" href="#"><p class="m-0 py-3">Lupa kata sandi ?</p></a>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <div class="row gx-2 gy-2">
+                                    <div class="col-12">
+                                        <button class="btn btn-primary d-flex align-items-center w-100 justify-content-center">
+                                           <i class="fa fa-download me-2" aria-hidden="true"></i>
+                                           <p class="m-0">
+                                            Download Panduan Lengkap (PDF)
+                                           </p> 
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                            <img class="img-thumbnail" src="assets/img/Alur New.jpeg" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <p>
+                                    Apabila anda mengalami kesulitan mengoperasikan "Menu Bantuan Teknis" ini silahkan hubungi kami
+                                </p>
+                                <button class="btn btn-success d-flex align-items-center w-100 justify-content-center"> <i class="fa fa-whatsapp me-2 mb-0" aria-hidden="true"></i><p class="m-0"> Hubungi kami</p></button>
+                            </div>
+                         
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section-2">
+        <div class="container-fluid hero-bg py-5">
+            <div class="container mb-5">
+                <div class="row align-items-center">
+
+                    <div class="col-2">
+                        <h1 class="display-3 text-center judul position-absolute" style="z-index: 2;">VISI</h1>
+                        <img class="square " src="assets/img/square.png" alt="" width="500">
+                    </div>
+                    <div class="col-8">
+                        <ul class="list-group list-group-flush align-items-center ">
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container ">
+                <div class="row justify-content-end align-items-center">
+
+                    <div class="col-8">
+                        <ul class="list-group list-group-flush align-items-center border-none">
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                            <li class="list-group-item border border-0">Tell your visitors about your company and what
+                                you
+                                do.</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-2">
+                        <h1 class="display-3 text-center judul position-absolute" style="z-index: 2;">MISI</h1>
+                        <img class="square " src="assets/img/square.png" alt="" width="500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section-3" class="py-5 bintang">
+        <div class="container">
+            <h1 class="display-5 text-center judul mb-5">Data Regulasi Peraturan Daerah</h1>
+            <div class="row p-0 gx-2">
+                <div class="col">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-center img-thumbnail p-2 m-2">
+                    <iframe class="rounded p-0 m-0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126715.84304942742!2d110.3346642682246!3d-7.024552227889484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4d3f0d024d%3A0x1e0432b9da5cb9f2!2sKota%20Semarang%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1698617298932!5m2!1sid!2sid"
+                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center fixed-bottom">
+        <p class="m-0 p-1">&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Bootstrap JS from a CDN (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+</body>
+
+</html>

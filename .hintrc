@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter"
+        ]
+      }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-required-parent": "off",
+        "aria-valid-attr-value": "off",
+        "aria-required-children": "off"
+      }
+    ],
+    "apple-touch-icons": "off",
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off"
+      }
+    ]
+  }
+}

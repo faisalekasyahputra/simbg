@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="13.446in" height="12.1785in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3168.84 2870.12"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FEFEFE}
+   ]]>
+  </style>
+     <clipPath id="id0">
+      <path d="M1337.91 358.06l1830.93 0 0 1830.93 -1830.93 0 0 -1830.93z"/>
+     </clipPath>
+     <clipPath id="id1">
+      <path d="M774.6 1360.59l1509.53 0 0 1509.53 -1509.53 0 0 -1509.53z"/>
+     </clipPath>
+     <clipPath id="id2">
+      <path d="M-0 0l2463.76 0 0 2463.77 -2463.76 0 0 -2463.77z"/>
+     </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2781132750080">
+   <g>
+    <g style="clip-path:url(#id0)">
+     <image x="1337.91" y="358.06" width="1830.93" height="1830.93" xlink:href="square_Images\square_ImgID1.png"/>
+    </g>
+   </g>
+   <rect class="fil0" transform="matrix(0.376863 0.376863 -0.376863 0.376863 2228.09 529.85)" width="1950.14" height="1950.14" rx="138.82" ry="138.82"/>
+   <g>
+    <g style="clip-path:url(#id1)">
+     <image x="774.6" y="1360.59" width="1509.53" height="1509.53" xlink:href="square_Images\square_ImgID2.png"/>
+    </g>
+   </g>
+   <path class="fil0" d="M1609.66 1567.95l467.11 467.11c44.24,44.24 44.24,116.35 0,160.59l-467.11 467.11c-44.24,44.24 -116.35,44.24 -160.59,0l-467.11 -467.11c-44.24,-44.24 -44.24,-116.35 0,-160.59l467.11 -467.11c44.24,-44.24 116.35,-44.24 160.59,0zm-41.52 41.52l467.11 467.11c21.32,21.32 21.32,56.22 0,77.54l-467.11 467.11c-21.32,21.32 -56.22,21.32 -77.54,0l-467.11 -467.11c-21.32,-21.32 -21.32,-56.22 0,-77.54l467.11 -467.11c21.32,-21.32 56.22,-21.32 77.54,0z"/>
+   <g>
+    <g style="clip-path:url(#id2)">
+     <image x="-0" y="0" width="2463.76" height="2463.77" xlink:href="square_Images\square_ImgID3.png"/>
+    </g>
+   </g>
+   <rect class="fil0" transform="matrix(0.507122 0.507122 -0.507122 0.507122 1197.86 231.162)" width="1950.14" height="1950.14" rx="138.82" ry="138.82"/>
+  </g>
+ </g>
+</svg>
